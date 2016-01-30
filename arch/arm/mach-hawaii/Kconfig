@@ -301,6 +301,12 @@ config	IGNORE_DAP_POWERUP_REQ
 	  PI policy will change to 7 always. This feature enables the system to
 	  retain the states as is, even after attaching JTAG.
 
+config SCBS
+        bool "Super Cool Battery Software"
+        select QUICK_WAKEUP
+        help
+           Super Cool Battery Software (c) JonPry
+ 
 config	HAWAII_L2X0_PREFETCH
 	bool "Enable L2 cache prefetching for Hawaii platform"
 	default n
